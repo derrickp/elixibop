@@ -8,6 +8,11 @@ use Mix.Config
 # if you want to provide default values for your application for
 # third-party users, it should be done in your "mix.exs" file.
 
+config :elixibop,
+  app_name: "elixibop",
+  contact_info: "https://github.com/derrickp/elixibop",
+  musicbrainz_url: "https://musicbrainz.org/ws/2"
+
 # You can configure your application as:
 #
 #     config :elixibop, key: :value
