@@ -1,0 +1,3 @@
+%{
+  "saxy": {:hex, :saxy, "0.9.1", "96571a31b513a06903b2c4ae3ef8d0b30c92f67fb14ec47c26f489d4def677ac", [:mix], [], "hexpm"},
+}
