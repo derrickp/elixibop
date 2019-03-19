@@ -1,4 +1,4 @@
-defmodule Elixibop.Artist do
+defmodule Elixibop.Artists.Artist do
   defstruct ~w[
     id
     type
@@ -8,6 +8,6 @@ defmodule Elixibop.Artist do
     area
     begin_area
     disambiguation
-    life_span
+    tags
   ]a
 end

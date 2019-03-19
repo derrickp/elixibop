@@ -1,4 +1,6 @@
 import Elixibop.Headers, only: [headers: 0]
+import Elixibop.Artists.QueryParameters
+import Elixibop.Artists.Parsing
 
 defmodule Elixibop.Artists do
   def by_name(name) do
@@ -7,30 +9,37 @@ defmodule Elixibop.Artists do
     |> by_query
   end
 
-  def by_name_and_genres(name, genres) do
+  def by_name_and_genres(name, genres, min_score \\ 0) do
     tag_query = queryize_genres(genres)
     name_query = queryize_name(name)
-    name_query <> URI.encode_www_form(" AND ") <> tag_query
+
+    build_url_params(name_query, tag_query)
     |> by_query
+    |> filter_by_score(min_score)
   end
 
-  defp queryize_name(name) do
-    name
-    |> URI.encode_www_form
-    |> (&("artist:" <> &1)).()
+  def filter_by_score(artist_list, 0) do
+    [:ok, artist_list]
   end
 
-  defp queryize_genres(genres) do
-    genres
-    |> Enum.map(fn genre -> "tag:" <> URI.encode_www_form(genre) end)
-    |> Enum.join(URI.encode_www_form(" OR "))
-    |> (fn query -> "(" <> query <> ")" end).()
+  def filter_by_score(artist_list, min_score) do
+    [:ok, Enum.filter(artist_list, fn artist -> artist.score >= min_score end)]
   end
 
-  defp by_query(query) do
+  def by_query(query) do
     url = base_url() <> "?query=" <> query
     IO.puts(url)
+
     HTTPotion.get(url, headers: headers())
+    |> handle_response
+  end
+
+  def handle_response(%HTTPotion.Response{} = response) do
+    response.body |> artists_from_xml
+  end
+
+  def handle_response(%HTTPotion.ErrorResponse{} = error_response) do
+    error_response
   end
 
   def base_url do
