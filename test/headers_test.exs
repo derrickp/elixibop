@@ -3,7 +3,8 @@ defmodule Elixibop.HeadersTest do
   doctest Elixibop.Headers
 
   test "returns a user_agent" do
-    assert Elixibop.Headers.user_agent() == "elixibop/0.1.0 (https://github.com/derrickp/elixibop)"
+    assert Elixibop.Headers.user_agent() ==
+             "elixibop/0.1.0 (https://github.com/derrickp/elixibop)"
   end
 
   test "returns expected headers" do

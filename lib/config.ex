@@ -1,7 +1,7 @@
 defmodule Elixibop.Config do
   @spec version() :: String.t()
   def version do
-    Mix.Project.config[:version]
+    Mix.Project.config()[:version]
   end
 
   @spec contact_info() :: String.t()
