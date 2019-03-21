@@ -19,11 +19,11 @@ defmodule Elixibop.Artists do
   end
 
   def filter_by_score(artist_list, 0) do
-    [:ok, artist_list]
+    {:ok, artist_list}
   end
 
   def filter_by_score(artist_list, min_score) do
-    [:ok, Enum.filter(artist_list, fn artist -> artist.score >= min_score end)]
+    {:ok, Enum.filter(artist_list, fn artist -> artist.score >= min_score end)}
   end
 
   def by_query(query) do
