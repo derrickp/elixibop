@@ -11,11 +11,11 @@ defmodule Elixibop.Areas.Area do
     relation_list
   ]a
 
-  def build(nil) do
+  def from_map(nil) do
     %Elixibop.Areas.Area{}
   end
 
-  def build(area_map) do
+  def from_map(area_map) do
     %Elixibop.Areas.Area{
       id: area_map.id,
       type: area_map.type,

@@ -10,7 +10,7 @@ defmodule Elixibop.Artists.Parsing do
   end
 
   def build_artists(artist_list) do
-    Enum.map(artist_list.artists, &Artist.build/1)
+    Enum.map(artist_list.artists, &Artist.from_map/1)
   end
 
   def parse_xml_doc(xml_doc) do
