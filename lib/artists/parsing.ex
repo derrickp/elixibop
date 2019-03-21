@@ -1,9 +1,8 @@
 import SweetXml
 
-alias Elixibop.Artists.{Artist}
+alias Elixibop.Artists.Artist
 
 defmodule Elixibop.Artists.Parsing do
-
   def artists_from_xml(xml_doc) do
     xml_doc
     |> parse_xml_doc
@@ -11,21 +10,7 @@ defmodule Elixibop.Artists.Parsing do
   end
 
   def build_artists(artist_list) do
-    Enum.map(artist_list.artists, &build_artist/1)
-  end
-
-  def build_artist(artist_map) do
-    %Artist{
-      id: artist_map.id,
-      name: artist_map.name,
-      type: artist_map.type,
-      score: artist_map.score,
-      country: artist_map.country,
-      disambiguation: artist_map.disambiguation,
-      area: artist_map.area,
-      begin_area: artist_map.begin_area,
-      tags: artist_map.tags
-    }
+    Enum.map(artist_list.artists, &Artist.build/1)
   end
 
   def parse_xml_doc(xml_doc) do
@@ -35,19 +20,32 @@ defmodule Elixibop.Artists.Parsing do
         ~x"//artist-list/artist"l,
         id: ~x"./@id",
         name: ~x"./name/text()",
+        sort_name: ~x"./sort-name/text()",
         type: ~x"./@type",
         score: ~x"@ns2:score"i,
         country: ~x"./country/text()",
         disambiguation: ~x"./disambiguation/text()"o,
         area: [
           ~x"./area"o,
+          id: ~x"./@id",
           type: ~x"./@type",
-          name: ~x"./name/text()"
+          name: ~x"./name/text()",
+          sort_name: ~x"./sort-name/text()",
+          life_span: [
+            ~x"./life-span"o,
+            ended: ~x"./ended/text()"
+          ]
         ],
         begin_area: [
           ~x"./begin-area"o,
+          id: ~x"./@id",
           type: ~x"./@type",
-          name: ~x"./name/text()"
+          name: ~x"./name/text()",
+          sort_name: ~x"./sort-name/text()",
+          life_span: [
+            ~x"./life-span"o,
+            ended: ~x"./ended/text()"
+          ]
         ],
         tags: [
           ~x"./tag-list/tag"ol,
