@@ -1,17 +1,10 @@
-defmodule Elixibop.AreaTest do
+defmodule Elixibop.Areas.AreaTest do
   use ExUnit.Case
-  doctest Elixibop.Area
+  doctest Elixibop.Areas.Area
 
-  test "%Elixibop.Area{}" do
-    expected = ~w[alias_list id iso_3166_2_code_list life_span name sort_name]a
-    actual = %Elixibop.Area{} |> Map.from_struct() |> Map.keys()
-
-    assert actual == expected
-  end
-
-  test "%Elixibop.IsoCodeList{}" do
-    expected = ~w[iso_3166_2_code]a
-    actual = %Elixibop.IsoCodeList{} |> Map.from_struct() |> Map.keys()
+  test "%Elixibop.Areas.Area{}" do
+    expected = ~w[alias_list id iso_3166_2_code_list life_span name relation_list score sort_name type]a
+    actual = %Elixibop.Areas.Area{} |> Map.from_struct() |> Map.keys()
 
     assert actual == expected
   end

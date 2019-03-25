@@ -1,20 +1,20 @@
-defmodule Elixibop.ArtistTest do
+defmodule Elixibop.Artists.ArtistTest do
   use ExUnit.Case
-  doctest Elixibop.Artist
+  doctest Elixibop.Artists.Artist
 
-  test "%Elixibop.Artist{}" do
+  test "%Elixibop.Artists.Artist{}" do
     expected = ~w[
       area
       begin_area
       country
       disambiguation
       id
-      life_span
       name
       score
+      tags
       type
     ]a
-    actual = %Elixibop.Artist{} |> Map.from_struct() |> Map.keys()
+    actual = %Elixibop.Artists.Artist{} |> Map.from_struct() |> Map.keys()
 
     assert actual == expected
   end
