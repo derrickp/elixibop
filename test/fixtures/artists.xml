@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<metadata created="2019-03-25T05:33:26.199Z"
+  xmlns="http://musicbrainz.org/ns/mmd-2.0#"
+  xmlns:ns2="http://musicbrainz.org/ns/ext#-2.0">
+  <artist-list count="14" offset="0">
+    <artist id="4bb4e4e4-5f66-4509-98af-62dbb90c45c5" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="100">
+      <name>Disturbed</name>
+      <sort-name>Disturbed</sort-name>
+      <country>US</country>
+      <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country" type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+        <name>United States</name>
+        <sort-name>United States</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </area>
+      <begin-area id="29a709d8-0320-493e-8d0c-f2c386662b7f" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+        <name>Chicago</name>
+        <sort-name>Chicago</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </begin-area>
+      <disambiguation>USA metal band</disambiguation>
+      <life-span>
+        <begin>1996</begin>
+        <ended>false</ended>
+      </life-span>
+      <tag-list>
+        <tag count="1">
+          <name>rock</name>
+        </tag>
+        <tag count="3">
+          <name>heavy metal</name>
+        </tag>
+        <tag count="3">
+          <name>metal</name>
+        </tag>
+        <tag count="0">
+          <name>american</name>
+        </tag>
+        <tag count="1">
+          <name>hard rock</name>
+        </tag>
+        <tag count="4">
+          <name>nu metal</name>
+        </tag>
+        <tag count="0">
+          <name>new metal</name>
+        </tag>
+        <tag count="3">
+          <name>alternative metal</name>
+        </tag>
+        <tag count="0">
+          <name>rock and indie</name>
+        </tag>
+        <tag count="1">
+          <name>alternative/rock/metal</name>
+        </tag>
+      </tag-list>
+    </artist>
+    <artist id="bcee4d7d-72e6-44d0-8361-2d3b92fb8de5" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="91">
+      <name>Disturbed</name>
+      <sort-name>Disturbed</sort-name>
+      <country>US</country>
+      <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country" type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+        <name>United States</name>
+        <sort-name>United States</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </area>
+      <begin-area id="3e80aaa7-9b71-450f-8147-0ecf101d8f1a" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+        <name>Minneapolis</name>
+        <sort-name>Minneapolis</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </begin-area>
+      <disambiguation>'80s Thrash Metal Band</disambiguation>
+      <life-span>
+        <begin>1986</begin>
+        <ended>false</ended>
+      </life-span>
+    </artist>
+    <artist id="448579df-6b71-4c98-a8ba-5f8be40f2b90" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="90">
+      <name>Disturbed</name>
+      <sort-name>Disturbed</sort-name>
+      <country>GB</country>
+      <area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed" type="Country" type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+        <name>United Kingdom</name>
+        <sort-name>United Kingdom</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </area>
+      <disambiguation>70s UK punk band</disambiguation>
+      <life-span>
+        <ended>false</ended>
+      </life-span>
+      <tag-list>
+        <tag count="1">
+          <name>england</name>
+        </tag>
+        <tag count="1">
+          <name>uk</name>
+        </tag>
+        <tag count="1">
+          <name>punk</name>
+        </tag>
+        <tag count="1">
+          <name>london</name>
+        </tag>
+      </tag-list>
+    </artist>
+    <artist id="7bd7bf68-505f-49a5-8642-50a87d096490" ns2:score="90">
+      <name>Disturbed</name>
+      <sort-name>Disturbed</sort-name>
+      <disambiguation>Hard House</disambiguation>
+      <life-span>
+        <ended>false</ended>
+      </life-span>
+    </artist>
+    <artist id="dc75517c-d268-486d-bd5b-0eaff34eeef9" type="Person" type-id="b6e035f4-3ce9-331c-97df-83397230b0df" ns2:score="90">
+      <name>Disturbed</name>
+      <sort-name>Disturbed</sort-name>
+      <gender>male</gender>
+      <disambiguation>video game arranger Mark Dillon</disambiguation>
+      <life-span>
+        <ended>false</ended>
+      </life-span>
+    </artist>
+    <artist id="9d8684b0-0edd-480c-ba2a-9503e0ec4550" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="76">
+      <name>Disturbed Earth</name>
+      <sort-name>Disturbed Earth</sort-name>
+      <life-span>
+        <ended>false</ended>
+      </life-span>
+    </artist>
+    <artist id="eb26d1e6-41cf-4613-a353-c01fad7a404a" type="Person" type-id="b6e035f4-3ce9-331c-97df-83397230b0df" ns2:score="76">
+      <name>Disturbed Genitals</name>
+      <sort-name>Disturbed Genitals</sort-name>
+      <life-span>
+        <ended>false</ended>
+      </life-span>
+    </artist>
+    <artist id="fa9dae06-8e6e-4b04-a2e5-f61c83016ab0" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="76">
+      <name>The Disturbed</name>
+      <sort-name>Disturbed, The</sort-name>
+      <country>GB</country>
+      <area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed" type="Country" type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+        <name>United Kingdom</name>
+        <sort-name>United Kingdom</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </area>
+      <disambiguation>80s Scottish punk band</disambiguation>
+      <life-span>
+        <ended>false</ended>
+      </life-span>
+      <tag-list>
+        <tag count="1">
+          <name>glasgow</name>
+        </tag>
+        <tag count="1">
+          <name>punk</name>
+        </tag>
+        <tag count="1">
+          <name>uk</name>
+        </tag>
+        <tag count="1">
+          <name>scotland</name>
+        </tag>
+      </tag-list>
+    </artist>
+    <artist id="2a3ea182-9084-495e-a4c4-3d92f00214ca" ns2:score="75">
+      <name>Mentally Disturbed</name>
+      <sort-name>Mentally Disturbed</sort-name>
+      <disambiguation>hip-hop</disambiguation>
+      <life-span>
+        <ended>false</ended>
+      </life-span>
+    </artist>
+    <artist id="8d26c439-d48b-4535-b0ab-f2fb5219ef71" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="72">
+      <name>Disturbing Guests</name>
+      <sort-name>Disturbing Guests</sort-name>
+      <area id="5fa7d4dc-6fd5-4065-ae3c-a69ca9ce3bf8" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+        <name>Farnborough</name>
+        <sort-name>Farnborough</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </area>
+      <life-span>
+        <ended>false</ended>
+      </life-span>
+      <alias-list>
+        <alias sort-name="Guests, Disturbed">Disturbed Guests</alias>
+      </alias-list>
+    </artist>
+    <artist id="d3b17fa2-6c18-412d-9698-a93687f0965f" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="66">
+      <name>Murder the Disturbed</name>
+      <sort-name>Murder the Disturbed</sort-name>
+      <country>GB</country>
+      <area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed" type="Country" type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+        <name>United Kingdom</name>
+        <sort-name>United Kingdom</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </area>
+      <begin-area id="39558a32-af09-4c02-9315-d36032a16a01" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+        <name>Washington</name>
+        <sort-name>Washington</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </begin-area>
+      <life-span>
+        <begin>1979</begin>
+        <ended>false</ended>
+      </life-span>
+      <tag-list>
+        <tag count="1">
+          <name>england</name>
+        </tag>
+        <tag count="1">
+          <name>punk</name>
+        </tag>
+      </tag-list>
+    </artist>
+    <artist id="6d44b150-6d0b-438a-be8f-1398e863e17c" type="Person" type-id="b6e035f4-3ce9-331c-97df-83397230b0df" ns2:score="42">
+      <name>Fuzz</name>
+      <sort-name>Fuzz</sort-name>
+      <gender>male</gender>
+      <country>US</country>
+      <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country" type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+        <name>United States</name>
+        <sort-name>United States</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </area>
+      <disambiguation>Disturbed bassist Steve Kmak</disambiguation>
+      <ipi-list>
+        <ipi>00342373576</ipi>
+      </ipi-list>
+      <life-span>
+        <begin>1970-09-05</begin>
+        <ended>false</ended>
+      </life-span>
+      <alias-list>
+        <alias sort-name="Kmak, Steve">Steve Kmak</alias>
+      </alias-list>
+    </artist>
+    <artist id="711a8dbd-ce2b-4e5e-ae21-fbb4f515a001" type="Person" type-id="b6e035f4-3ce9-331c-97df-83397230b0df" ns2:score="35">
+      <name>Bob Sanders</name>
+      <sort-name>Sanders, Bob</sort-name>
+      <gender>male</gender>
+      <disambiguation>voice message on Disturbed's "Save Our Last Goodbye"</disambiguation>
+      <life-span>
+        <ended>true</ended>
+      </life-span>
+    </artist>
+    <artist id="2b5929bc-ffbf-496b-a66f-90dae13cbfe7" type="Group" type-id="e431f5f6-b5d2-343d-8b36-72607fffb74b" ns2:score="30">
+      <name>The Section Quartet</name>
+      <sort-name>Section Quartet, The</sort-name>
+      <country>US</country>
+      <area id="489ce91b-6658-3307-9877-795b68554c98" type="Country" type-id="06dd0ae4-8c74-30bb-b43d-95dcedf961de">
+        <name>United States</name>
+        <sort-name>United States</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </area>
+      <begin-area id="1f40c6e1-47ba-4e35-996f-fe6ee5840e62" type="City" type-id="6fd8f29a-3d0a-32fc-980d-ea697b69da78">
+        <name>Los Angeles</name>
+        <sort-name>Los Angeles</sort-name>
+        <life-span>
+          <ended>false</ended>
+        </life-span>
+      </begin-area>
+      <life-span>
+        <begin>1998</begin>
+        <ended>false</ended>
+      </life-span>
+      <alias-list>
+        <alias sort-name="The String Tribute to TOOL">The String Tribute to TOOL</alias>
+        <alias sort-name="Eric Gorfain and the Section">Eric Gorfain and the Section</alias>
+        <alias sort-name="The String Quartet">The String Quartet</alias>
+        <alias sort-name="The Section">The Section</alias>
+        <alias sort-name="The String Tribute to System of a Down">The String Tribute to System of a Down</alias>
+        <alias sort-name="The String Quartet Tribute to Coldplay">The String Quartet Tribute to Coldplay</alias>
+        <alias sort-name="The String Quartet Tribute to Tool">The String Quartet Tribute to Tool</alias>
+        <alias sort-name="String Quartet">String Quartet</alias>
+        <alias sort-name="The String Quartet Tribute to 311">The String Quartet Tribute to 311</alias>
+        <alias sort-name="The String Quartet Tribute to Nine Inch Nails">The String Quartet Tribute to Nine Inch Nails</alias>
+        <alias sort-name="The Section String Quartet">The Section String Quartet</alias>
+        <alias sort-name="The String Quartet Tribute to Incubus">The String Quartet Tribute to Incubus</alias>
+        <alias sort-name="The String Quartet Tribute to Disturbed">The String Quartet Tribute to Disturbed</alias>
+      </alias-list>
+    </artist>
+  </artist-list>
+</metadata>
