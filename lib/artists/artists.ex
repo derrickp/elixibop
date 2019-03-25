@@ -1,12 +1,12 @@
-import Elixibop.Headers, only: [headers: 0]
 import Elixibop.Artists.QueryParameters
-import Elixibop.Artists.Parsing
+alias Elixibop.Artists.Parsing
 
 defmodule Elixibop.Artists do
-  def by_name(name) do
+  def by_name(name, min_score \\ 0) do
     name
     |> queryize_name
     |> by_query
+    |> Elixibop.Common.Filter.by_score(min_score)
   end
 
   def by_name_and_genres(name, genres, min_score \\ 0) do
@@ -15,34 +15,22 @@ defmodule Elixibop.Artists do
 
     build_url_params(name_query, tag_query)
     |> by_query
-    |> filter_by_score(min_score)
-  end
-
-  def filter_by_score(artist_list, 0) do
-    {:ok, artist_list}
-  end
-
-  def filter_by_score(artist_list, min_score) do
-    {:ok, Enum.filter(artist_list, fn artist -> artist.score >= min_score end)}
+    |> Elixibop.Common.Filter.by_score(min_score)
   end
 
   def by_query(query) do
-    url = base_url() <> "?query=" <> query
-    IO.puts(url)
-
-    HTTPotion.get(url, headers: headers())
-    |> handle_response
+    Elixibop.Common.Query.perform(endpoint(), query, &handle_response/1)
   end
 
-  def handle_response(%HTTPotion.Response{} = response) do
-    response.body |> artists_from_xml
+  def handle_response({:ok, body}) do
+    body |> Parsing.from_xml
   end
 
-  def handle_response(%HTTPotion.ErrorResponse{} = error_response) do
-    error_response
+  def handle_response({:error, error}) do
+    error
   end
 
-  def base_url do
-    Application.get_env(:elixibop, :musicbrainz_url) <> "/artist"
+  def endpoint do
+    "/artist"
   end
 end

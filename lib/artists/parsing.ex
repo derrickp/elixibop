@@ -3,7 +3,7 @@ import SweetXml
 alias Elixibop.Artists.Artist
 
 defmodule Elixibop.Artists.Parsing do
-  def artists_from_xml(xml_doc) do
+  def from_xml(xml_doc) do
     xml_doc
     |> parse_xml_doc
     |> build_artists
@@ -25,28 +25,8 @@ defmodule Elixibop.Artists.Parsing do
         score: ~x"@ns2:score"i,
         country: ~x"./country/text()",
         disambiguation: ~x"./disambiguation/text()"o,
-        area: [
-          ~x"./area"o,
-          id: ~x"./@id",
-          type: ~x"./@type",
-          name: ~x"./name/text()",
-          sort_name: ~x"./sort-name/text()",
-          life_span: [
-            ~x"./life-span"o,
-            ended: ~x"./ended/text()"
-          ]
-        ],
-        begin_area: [
-          ~x"./begin-area"o,
-          id: ~x"./@id",
-          type: ~x"./@type",
-          name: ~x"./name/text()",
-          sort_name: ~x"./sort-name/text()",
-          life_span: [
-            ~x"./life-span"o,
-            ended: ~x"./ended/text()"
-          ]
-        ],
+        area: Elixibop.Areas.Parsing.parse_area("area"),
+        begin_area: Elixibop.Areas.Parsing.parse_area("begin-area"),
         tags: [
           ~x"./tag-list/tag"ol,
           count: ~x"./@count",
