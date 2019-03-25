@@ -2,7 +2,6 @@ defmodule Elixibop.Artists.QueryParameters do
   def queryize_name(name) do
     name
     |> URI.encode_www_form()
-    |> (&("artist:" <> &1)).()
   end
 
   def build_url_params(name_query, "") do
