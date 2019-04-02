@@ -25,8 +25,9 @@ defmodule Elixibop.Artists.Parsing do
         score: ~x"@ns2:score"i,
         country: ~x"./country/text()",
         disambiguation: ~x"./disambiguation/text()"o,
-        area: Elixibop.Areas.Parsing.parse_area("area"),
-        begin_area: Elixibop.Areas.Parsing.parse_area("begin-area"),
+        life_span: Elixibop.LifeSpans.Parsing.parse_tag("life-span"),
+        area: Elixibop.Areas.Parsing.parse_tag("area"),
+        begin_area: Elixibop.Areas.Parsing.parse_tag("begin-area"),
         tags: [
           ~x"./tag-list/tag"ol,
           count: ~x"./@count",
