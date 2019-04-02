@@ -9,6 +9,7 @@ defmodule Elixibop.Artists.ArtistTest do
       country
       disambiguation
       id
+      life_span
       name
       score
       tags

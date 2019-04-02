@@ -1,4 +1,5 @@
 alias Elixibop.Areas.Area
+alias Elixibop.LifeSpans.LifeSpan
 
 defmodule Elixibop.Artists.Artist do
   defstruct ~w[
@@ -10,6 +11,7 @@ defmodule Elixibop.Artists.Artist do
     area
     begin_area
     disambiguation
+    life_span
     tags
   ]a
 
@@ -25,6 +27,7 @@ defmodule Elixibop.Artists.Artist do
       score: artist_map[:score],
       country: artist_map[:country],
       disambiguation: artist_map[:disambiguation],
+      life_span: LifeSpan.from_map(artist_map[:life_span]),
       area: Area.from_map(artist_map[:area]),
       begin_area: Area.from_map(artist_map[:begin_area]),
       tags: artist_map[:tags]

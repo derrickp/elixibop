@@ -11,18 +11,21 @@ defmodule Elixibop.Areas.Area do
     relation_list
   ]a
 
+  alias Elixibop.Areas.Area
+  alias Elixibop.LifeSpans.LifeSpan
+
   def from_map(nil) do
-    %Elixibop.Areas.Area{}
+    %Area{}
   end
 
   def from_map(area_map) do
-    %Elixibop.Areas.Area{
+    %Area{
       id: area_map[:id],
       type: area_map[:type],
       name: area_map[:name],
       score: area_map[:score],
       sort_name: area_map[:sort_name],
-      life_span: area_map[:life_span],
+      life_span: LifeSpan.from_map(area_map[:life_span]),
       relation_list: build_relation_list(area_map[:relation_list]),
       alias_list: area_map[:alias_list],
       iso_3166_2_code_list: build_code_list(area_map[:iso_3166_2_code_list])
