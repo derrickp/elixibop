@@ -28,12 +28,9 @@ defmodule Elixibop.Areas.Parsing do
           type: ~x"./@type",
           target: ~x"./target/text()",
           direction: ~x"./direction/text()",
-          area: parse_area("area"),
+          area: parse_tag("area"),
         ],
-        life_span: [
-          ~x"./life-span"o,
-          ended: ~x"./ended/text()"
-        ],
+        life_span: Elixibop.LifeSpans.Parsing.parse_tag("life-span"),
         iso_3166_2_code_list: [
           ~x"./iso-3166-2-code-list/iso-3166-2-code"ol,
           code: ~x"./text()"
@@ -42,7 +39,7 @@ defmodule Elixibop.Areas.Parsing do
     )
   end
 
-  def parse_area(tag_name) do
+  def parse_tag(tag_name) do
     [
       ~x"./#{tag_name}"o,
       id: ~x"./@id",
