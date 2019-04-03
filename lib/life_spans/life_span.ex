@@ -7,7 +7,7 @@ defmodule Elixibop.LifeSpans.LifeSpan do
     %LifeSpan{}
   end
 
-  def from_map(life_span_map) do
+  def from_map(%{} = life_span_map) do
     %LifeSpan{
       begin: life_span_map[:begin],
       end: life_span_map[:end],

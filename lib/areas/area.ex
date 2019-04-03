@@ -18,7 +18,7 @@ defmodule Elixibop.Areas.Area do
     %Area{}
   end
 
-  def from_map(area_map) do
+  def from_map(%{} = area_map) do
     %Area{
       id: area_map[:id],
       type: area_map[:type],
