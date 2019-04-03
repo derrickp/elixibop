@@ -1,7 +1,20 @@
 import Elixibop.Artists.QueryParameters
 alias Elixibop.Artists.Parsing
+alias Elixibop.Artists.QueryOptions
 
 defmodule Elixibop.Artists do
+
+  def query(nil) do
+    {:error, "No argument provided"}
+  end
+
+  def query(%QueryOptions{} = options, min_score \\ 0) do
+    options
+    |> build_url_params
+    |> by_query
+    |> Elixibop.Common.Filter.by_score(min_score)
+  end
+
   def by_name(name, min_score \\ 0) do
     name
     |> queryize_name
